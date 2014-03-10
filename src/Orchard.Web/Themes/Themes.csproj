@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CB70A642-8CEC-4DDE-8C9F-AD08900EC98D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Themes</RootNamespace>
+    <AssemblyName>Themes</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>..\..\OrchardBasicCorrectness.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\aspnetmvc\System.Web.Mvc.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\css\font\fontawesome-webfont.svg" />
+    <Content Include="MyTheme\css\images\arrows.png" />
+    <Content Include="MyTheme\css\images\bracket.svg" />
+    <Content Include="MyTheme\css\images\mobileUI-site-nav-opener-bg.svg" />
+    <Content Include="MyTheme\css\images\preloader.gif" />
+    <Content Include="MyTheme\css\skel-noscript.css" />
+    <Content Include="MyTheme\css\style-1000px.css" />
+    <Content Include="MyTheme\css\style-desktop.css" />
+    <Content Include="MyTheme\css\style-mobile.css" />
+    <Content Include="MyTheme\css\style.css" />
+    <Content Include="MyTheme\css\TouchStyles.css" />
+    <Content Include="MyTheme\css\touchTouch.css" />
+    <Content Include="MyTheme\images\banner.jpg" />
+    <Content Include="MyTheme\images\pic01.jpg" />
+    <Content Include="MyTheme\images\pic02.jpg" />
+    <Content Include="MyTheme\images\pic03.jpg" />
+    <Content Include="MyTheme\images\pic04.jpg" />
+    <Content Include="MyTheme\images\pic05.jpg" />
+    <Content Include="MyTheme\images\pic06.jpg" />
+    <Content Include="MyTheme\images\pic07.jpg" />
+    <Content Include="MyTheme\scripts\basic.js" />
+    <Content Include="MyTheme\scripts\config.js" />
+    <Content Include="MyTheme\scripts\elements\contactUs.js" />
+    <Content Include="MyTheme\scripts\first-gallery.js" />
+    <Content Include="MyTheme\scripts\html5shiv.js" />
+    <Content Include="MyTheme\scripts\jquery.dropotron.min.js" />
+    <Content Include="MyTheme\scripts\jquery.min.js" />
+    <Content Include="MyTheme\scripts\skel-panels.min.js" />
+    <Content Include="MyTheme\scripts\skel.min.js" />
+    <Content Include="MyTheme\scripts\touchTouch.jquery.js" />
+    <Content Include="MyTheme\scripts\verify.notify.js" />
+    <Content Include="MyTheme\scripts\verify.notify.min.js" />
+    <Content Include="MyTheme\Theme.png" />
+    <Content Include="MyTheme\Theme.txt" />
+    <Content Include="MyTheme\ThemeZonePreview.png" />
+    <Content Include="TheAdmin\Scripts\admin.js" />
+    <Content Include="TheAdmin\Styles\ie.css" />
+    <Content Include="TheAdmin\Styles\ie7.css" />
+    <Content Include="TheAdmin\Styles\ie8.css" />
+    <Content Include="TheAdmin\Styles\images\adminNavBackground.gif" />
+    <Content Include="TheAdmin\Styles\images\icon-advisory.png" />
+    <Content Include="TheAdmin\Styles\images\icon-contribute.png" />
+    <Content Include="TheAdmin\Styles\images\icon-docs.png" />
+    <Content Include="TheAdmin\Styles\images\icon-friends.png" />
+    <Content Include="TheAdmin\Styles\images\icon-gallery.png" />
+    <Content Include="TheAdmin\Styles\images\icon-settings.png" />
+    <Content Include="TheAdmin\Styles\images\info.gif" />
+    <Content Include="TheAdmin\Styles\images\menu-default.png" />
+    <Content Include="TheAdmin\Styles\images\menu-glyph.png" />
+    <Content Include="TheAdmin\Styles\images\menuClosed.gif" />
+    <Content Include="TheAdmin\Styles\images\menuClosedHover.gif" />
+    <Content Include="TheAdmin\Styles\images\menuOpen.gif" />
+    <Content Include="TheAdmin\Styles\images\menuOpenHover.gif" />
+    <Content Include="TheAdmin\Styles\images\vinesBackgroundBottom.gif" />
+    <Content Include="TheThemeMachine\Styles\Site.css" />
+    <Content Include="TheThemeMachine\Theme.png" />
+    <Content Include="TheThemeMachine\Theme.txt" />
+    <Content Include="SafeMode\Content\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SafeMode\Styles\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="TheAdmin\Views\Pager.cshtml" />
+    <Content Include="TheAdmin\Views\OrchardVersion.cshtml" />
+    <Content Include="TheThemeMachine\ThemeZonePreview.png" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="TheAdmin\Views\Menu.cshtml" />
+    <Content Include="TheThemeMachine\Views\Branding.cshtml" />
+    <Content Include="TheThemeMachine\Views\BadgeOfHonor.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TheAdmin\Styles\images\icons.png" />
+    <Content Include="TheAdmin\Styles\images\tableHeaderBackgroundRed.gif" />
+    <Content Include="TheAdmin\Styles\site.css" />
+    <Content Include="TheAdmin\Theme.txt" />
+    <Content Include="SafeMode\Views\Document.cshtml" />
+    <Content Include="TheAdmin\Views\Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TheAdmin\Styles\images\icons.psd" />
+    <Content Include="SafeMode\Content\orchard.ico" />
+    <Content Include="SafeMode\Styles\ie6.css" />
+    <Content Include="SafeMode\Styles\images\backgroundHeader.gif" />
+    <Content Include="SafeMode\Styles\images\backgroundVines.gif" />
+    <Content Include="SafeMode\Styles\images\orchardLogo.gif" />
+    <Content Include="SafeMode\Styles\site.css" />
+    <Content Include="SafeMode\Theme.png" />
+    <Content Include="SafeMode\Theme.txt" />
+    <Content Include="SafeMode\Views\Layout.cshtml" />
+    <Content Include="TheAdmin\Styles\images\backgroundGradient.gif" />
+    <Content Include="TheAdmin\Styles\images\backgroundHeader.gif" />
+    <Content Include="TheAdmin\Styles\images\orchardLogo.gif" />
+    <Content Include="TheAdmin\Theme.png" />
+    <Content Include="TheAdmin\Views\User.cshtml" />
+    <Content Include="TheAdmin\Views\Header.cshtml" />
+    <Content Include="TheThemeMachine\Views\Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TheThemeMachine\Styles\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TheAdmin\Scripts\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TheAdmin\Styles\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TheThemeMachine\Placement.info" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TheAdmin\Views\LocalMenu.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TheAdmin\Views\Title.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Orchard\Orchard.Framework.csproj">
+      <Project>{2D1D92BB-4555-4CBE-8D0E-63563D6CE4C6}</Project>
+      <Name>Orchard.Framework</Name>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\Orchard.Core.csproj">
+      <Project>{9916839C-39FC-4CEB-A5AF-89CA7E87119F}</Project>
+      <Name>Orchard.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modules\Orchard.Comments\Orchard.Comments.csproj">
+      <Project>{14C049FD-B35B-415A-A824-87F26B26E7FD}</Project>
+      <Name>Orchard.Comments</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Modules\Orchard.Widgets\Orchard.Widgets.csproj">
+      <Project>{194d3ccc-1153-474d-8176-fde8d7d0d0bd}</Project>
+      <Name>Orchard.Widgets</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TheThemeMachine\Views\Pager.cshtml" />
+    <Content Include="TheThemeMachine\Views\Pager.First.cshtml" />
+    <Content Include="TheThemeMachine\Views\Pager.Last.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TheAdmin\Views\ErrorPage.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\css\font\fontawesome-webfont.eot" />
+    <Content Include="MyTheme\css\font\fontawesome-webfont.ttf" />
+    <Content Include="MyTheme\css\font\fontawesome-webfont.woff" />
+    <Content Include="MyTheme\css\font\FontAwesome.otf" />
+    <Content Include="MyTheme\css\Web.config" />
+    <Content Include="MyTheme\images\Web.config" />
+    <Content Include="MyTheme\Placement.info">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="MyTheme\scripts\Web.config" />
+    <Content Include="MyTheme\Views\Branding.cshtml" />
+    <Content Include="MyTheme\Views\Layout.cshtml" />
+    <Content Include="MyTheme\Views\Menu.cshtml" />
+    <Content Include="MyTheme\Views\MenuItem.cshtml" />
+    <Content Include="MyTheme\Views\Pager.cshtml" />
+    <Content Include="MyTheme\Views\Pager.First.cshtml" />
+    <Content Include="MyTheme\Views\Pager.Last.cshtml" />
+    <Content Include="MyTheme\Views\Web.config" />
+    <Content Include="MyTheme\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MyTheme\Content\" />
+    <Folder Include="MyTheme\Views\Parts\" />
+    <Folder Include="MyTheme\Zones\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\MenuItemLink-main-menu.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Items\Header.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\SubmenuItemLink.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Parts.Blogs.BlogPost.List.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Parts.Title_Summary.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Parts.Common.Body.Summary.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Content.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Parts.Common.Metadata.Summary.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Content.Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\EditorTemplates\Parts.Comments.Comments.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\EditorTemplates\Parts.Comment.AdminEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\EditorTemplates\Parts.Comment.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Parts.CommentForm.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Parts.ListOfComments.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\User.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\CommentMetadata.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\CommentReplyButton.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\App_Data\Localization\ru-RU\orchard.theme.po" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Parts.Title-BlogPost.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Parts.Common.Metadata-BlogPost.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Parts.Tags.ShowTags-BlogPost.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Content-BlogPost.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Parts.CustomForm.Wrapper-CustomFormWidget.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Widget.Wrapper.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\_Copyright.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" DependsOnTargets="AfterBuildCompiler">
+    <PropertyGroup>
+      <AreasManifestDir>$(ProjectDir)\..\Manifests</AreasManifestDir>
+    </PropertyGroup>
+  </Target>
+  <Target Name="AfterBuildCompiler" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)\..\$(ProjectName)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>30320</DevelopmentServerPort>
+          <DevelopmentServerVPath>/OrchardLocal</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://orchard.codeplex.com</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
